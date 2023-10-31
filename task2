@@ -1,0 +1,11 @@
+def sum_of_squares(N):
+    return sum(i**2 for i in range(1, N+1))
+
+# Основна програма
+
+from sum_of_squares_module import sum_of_squares
+
+# Приклад використання функції
+N = 5  # Ваше число N
+result = sum_of_squares(N)
+print(f"Сума квадратів чисел від 1 до {N} дорівнює {result}")
