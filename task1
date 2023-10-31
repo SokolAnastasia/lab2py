@@ -1,0 +1,24 @@
+import math
+
+def calculate_expression():
+    # Введення значень x та y від користувача
+    x = float(input("Введіть значення x: "))
+    y = float(input("Введіть значення y: "))
+
+    # Обчислення виразу z = cos(2x) + sin(2y)
+    z = math.cos(2 * x) + math.sin(2 * y)
+    print(f"Результат обчислення z = {z}")
+
+def sum_of_squares():
+    # Введення значення N від користувача
+    N = int(input("Введіть значення N: "))
+
+    # Обчислення суми квадратів чисел від 1 до N
+    result = sum(i**2 for i in range(1, N+1))
+    print(f"Сума квадратів чисел від 1 до {N} = {result}")
+
+# Виклик першої функції
+calculate_expression()
+
+# Виклик другої функції
+sum_of_squares()
